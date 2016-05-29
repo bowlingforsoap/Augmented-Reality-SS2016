@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD8E962F1CDCC37A00AC5CFD /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E962D1CDCC37A00AC5CFD /* libopencv_core.3.1.0.dylib */; };
+		FD8E96301CDCC37A00AC5CFD /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E962E1CDCC37A00AC5CFD /* libopencv_highgui.3.1.0.dylib */; };
+		FD8E96321CDCC3FD00AC5CFD /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E96311CDCC3FD00AC5CFD /* libopencv_videoio.3.1.0.dylib */; };
+		FD8E96341CDCC50400AC5CFD /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E96331CDCC50400AC5CFD /* libopencv_imgproc.3.1.0.dylib */; };
 		FDFBA3C11CDA63C500766E51 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDFBA3C01CDA63C500766E51 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD8E962D1CDCC37A00AC5CFD /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		FD8E962E1CDCC37A00AC5CFD /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		FD8E96311CDCC3FD00AC5CFD /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
+		FD8E96331CDCC50400AC5CFD /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
 		FDFBA3BD1CDA63C500766E51 /* Augmented Reality SS16 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Augmented Reality SS16"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFBA3C01CDA63C500766E51 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8E96341CDCC50400AC5CFD /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+				FD8E96321CDCC3FD00AC5CFD /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				FD8E962F1CDCC37A00AC5CFD /* libopencv_core.3.1.0.dylib in Frameworks */,
+				FD8E96301CDCC37A00AC5CFD /* libopencv_highgui.3.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,10 @@
 		FDFBA3B41CDA63C400766E51 = {
 			isa = PBXGroup;
 			children = (
+				FD8E96331CDCC50400AC5CFD /* libopencv_imgproc.3.1.0.dylib */,
+				FD8E96311CDCC3FD00AC5CFD /* libopencv_videoio.3.1.0.dylib */,
+				FD8E962D1CDCC37A00AC5CFD /* libopencv_core.3.1.0.dylib */,
+				FD8E962E1CDCC37A00AC5CFD /* libopencv_highgui.3.1.0.dylib */,
 				FDFBA3BF1CDA63C500766E51 /* Augmented Reality SS16 */,
 				FDFBA3BE1CDA63C500766E51 /* Products */,
 			);
@@ -209,6 +225,8 @@
 		FDFBA3C51CDA63C500766E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +234,8 @@
 		FDFBA3C61CDA63C500766E51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +259,7 @@
 				FDFBA3C61CDA63C500766E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
